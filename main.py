@@ -10,7 +10,7 @@ import time
 
 def main():
     # the path of the Database / name of Database = myData
-    my_file = Path("/home/mohal/open/Bachelorarbeit/myData2.db")
+    my_file = Path("/home/myData")
     # Max Frequency
     defaultFreq = 3500
     # Min Frequency
