@@ -140,30 +140,3 @@ def get_energy(last_energydata,energy_unit,energydata):
             if i>=x:
               aktiveCore+=1
         return sum(coreenergy),aktiveCore
-
-
-'''
-corelist = get_corelist()
-frequencies = read_frequency(corelist)
-print(corelist)
-print(check_output(["bash", "/tmp/freq.sh"]))
-print(frequencies)
-
-energy_unit = get_energy_unit()
-print(energy_unit)
-last_energydata = read_energy(corelist)
-print(last_energydata)
-sleep(1)
-for i in range(0, 1000):
-    energydata = read_energy(corelist)
-    scaling_frequencydata, effective_frequencydata = read_frequency(corelist)
-
-    diff = diff_energy(energydata, last_energydata)
-    print_energy(diff, energy_unit)
-
-    print("\t scaling   Frequencies: " + str(scaling_frequencydata[0]))
-    print("\t effective Frequencies: " + str(effective_frequencydata[0]))
-    last_energydata = energydata
-    sleep(1)
-
-'''
