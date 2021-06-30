@@ -7,7 +7,7 @@ from sqlalchemy import create_engine, ForeignKey
 from sqlalchemy import Column, Date, Integer, String, Boolean, Float, BigInteger
 from sqlalchemy.dialects.postgresql import TIMESTAMP
 # the path of the Database, that connected with sqlite
-path = 'sqlite:////home/mohal/open/Bachelorarbeit/myData2.db'
+path = 'sqlite:////home/'
 engine = create_engine(path, echo=True)
 Base = declarative_base()
 
